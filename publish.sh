@@ -23,7 +23,7 @@ git worktree add -B gh-pages public origin/gh-pages
 echo "Removing existing files"
 rm -rf public/*
 
-curl -sSL "https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" > /tmp/hugo.tar.gz && tar -f /tmp/hugo.tar.gz -xz
+curl -sSL "https://github.com/spf13/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz" > /tmp/hugo.tar.gz && tar -f /tmp/hugo.tar.gz -xz
 
 echo "Generating site"
 ./hugo --theme book
@@ -32,4 +32,4 @@ echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 
 echo "Pushing to github"
-git push origin gh-pages
+git push origin gh-pages:gh-pages
