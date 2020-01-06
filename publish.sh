@@ -32,4 +32,5 @@ echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
 
 echo "Pushing to github"
-git push origin gh-pages:gh-pages
+auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+git push -c "http.extraheader=${auth_header}" origin gh-pages:gh-pages
