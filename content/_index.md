@@ -10,9 +10,7 @@ Une encyclopédie pour découvrir le fonctionnement des consoles des 40 dernièr
 
 <--->
 
-## Avertisement
 
-Cette encyclopédie est un assemblage de ce que j'ai appris au cours des dernières années sur le retrogaming. Il présente des techniques qui permettent, **selon moi**, de jouer avec la meilleure image et le meilleure son.
 {{< /columns >}}
 
 
