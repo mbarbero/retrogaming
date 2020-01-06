@@ -8,6 +8,9 @@ then
     exit 1;
 fi
 
+git config --global user.email "mikael.barbero@gmail.com"
+git config --global user.name "Mikaël Barbero"
+
 echo "Deleting old publication"
 rm -rf public
 mkdir public
